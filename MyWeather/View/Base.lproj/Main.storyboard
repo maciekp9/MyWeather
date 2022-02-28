@@ -87,7 +87,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ChB-Ve-p4S">
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="ChB-Ve-p4S">
                                 <rect key="frame" x="20" y="88" width="374" height="51"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jMw-rS-cv9">
@@ -97,8 +97,9 @@
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
                                     </button>
-                                    <searchBar contentMode="redraw" placeholder="Enter Location.." translatesAutoresizingMaskIntoConstraints="NO" id="e2Z-3e-lTZ">
+                                    <searchBar contentMode="redraw" placeholder="Enter Location.." translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2Z-3e-lTZ">
                                         <rect key="frame" x="56" y="0.0" width="318" height="51"/>
+                                        <color key="barTintColor" systemColor="opaqueSeparatorColor"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                 </subviews>
@@ -188,6 +189,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="H7Y-KE-pjr"/>
+                    <connections>
+                        <outlet property="cityLabel" destination="XZl-Uf-grx" id="535-wv-0g2"/>
+                        <outlet property="rainPercentLabel" destination="GoI-TC-ylG" id="HEG-UB-9sj"/>
+                        <outlet property="searchCityBar" destination="e2Z-3e-lTZ" id="7Nt-jP-sKR"/>
+                        <outlet property="temperatureLabel" destination="h0q-c6-lOj" id="Vfn-qZ-OxG"/>
+                        <outlet property="timeLabel" destination="7ex-Aq-8db" id="YOw-Wo-Gfg"/>
+                        <outlet property="weatherImage" destination="ZjL-Yq-6QC" id="HQW-7c-MmD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jFi-Li-bik" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,6 +243,9 @@
         <image name="location.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
