@@ -15,6 +15,8 @@
 		B48318AD27CBB33100A9FB1C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B48318AB27CBB33100A9FB1C /* LaunchScreen.storyboard */; };
 		B48318B927CBBB3D00A9FB1C /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48318B827CBBB3D00A9FB1C /* FavoritesController.swift */; };
 		B48318BB27CBBB8300A9FB1C /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48318BA27CBBB8300A9FB1C /* SettingsController.swift */; };
+		B4E8F8E327CD70AB000932E5 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F8E227CD70AB000932E5 /* WeatherManager.swift */; };
+		B4E8F8E527CD76DD000932E5 /* keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8F8E427CD76DD000932E5 /* keys.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B48318AE27CBB33100A9FB1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B48318B827CBBB3D00A9FB1C /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 		B48318BA27CBBB8300A9FB1C /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		B4E8F8E227CD70AB000932E5 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		B4E8F8E427CD76DD000932E5 /* keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keys.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 		B483189427CBB32D00A9FB1C = {
 			isa = PBXGroup;
 			children = (
+				B4E8F8E427CD76DD000932E5 /* keys.swift */,
 				B483189F27CBB32D00A9FB1C /* MyWeather */,
 				B483189E27CBB32D00A9FB1C /* Products */,
 			);
@@ -78,6 +83,7 @@
 				B48318A427CBB32E00A9FB1C /* WeatherController.swift */,
 				B48318B827CBBB3D00A9FB1C /* FavoritesController.swift */,
 				B48318BA27CBBB8300A9FB1C /* SettingsController.swift */,
+				B4E8F8E227CD70AB000932E5 /* WeatherManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -168,6 +174,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4E8F8E527CD76DD000932E5 /* keys.swift in Sources */,
+				B4E8F8E327CD70AB000932E5 /* WeatherManager.swift in Sources */,
 				B48318A527CBB32E00A9FB1C /* WeatherController.swift in Sources */,
 				B48318BB27CBBB8300A9FB1C /* SettingsController.swift in Sources */,
 				B48318A127CBB32D00A9FB1C /* AppDelegate.swift in Sources */,
